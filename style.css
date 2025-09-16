@@ -482,6 +482,11 @@ h2{
   --swiper-pagination-border: 2px solid red;
 }
 
+.gallery-section{
+    width: 100%;
+    max-width: 1440px;
+}
+
 .gallery{
     text-align: center !important;
 }
@@ -497,6 +502,7 @@ h2{
     grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(3, auto);
     gap: 1rem;
+    margin: auto;
 }
 
 .grid-container img{
