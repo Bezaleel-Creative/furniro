@@ -146,7 +146,7 @@ h1{
 
 
 section{
-    margin: 4rem auto;
+    margin: 5rem auto;
     padding: 14px;
     position: relative;
 }
@@ -432,7 +432,6 @@ h2{
 
 .inspiration-image{
     width: 100%;
-    /* border: 1px solid red; */
     box-sizing: border-box;
     overflow: hidden;
     padding: 18px;
@@ -480,6 +479,7 @@ h2{
   --swiper-pagination-color: #B88E2F; /* Color of the active bullet */
   --swiper-pagination-bullet-inactive-color: #999999; /* Color of inactive bullets */
   --swiper-pagination-bullet-inactive-opacity: 0.5; /* Opacity of inactive bullets */
+  --swiper-pagination-border: 2px solid red;
 }
 
 .gallery{
@@ -496,9 +496,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(3, auto);
-    height: 90vh;
     gap: 1rem;
-    overflow: hidden;
 }
 
 .grid-container img{
@@ -535,8 +533,6 @@ h2{
 
 .item5{
     grid-column: 10 / span 2;
-    grid-row: 1 / span 1;
-    overflow: hidden;
 }
 
 .item6{
