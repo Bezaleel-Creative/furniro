@@ -382,3 +382,75 @@ h2{
 }
 
 
+
+
+.inspiration{
+    width: 100%;
+    background-color: #FCF8F3;
+}
+
+.inspiration-container{
+    margin: auto;
+    width: 100%;
+    max-width: 1260px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    position: relative;
+}
+
+.inspiration-text{
+    margin: auto 0;
+    /* padding-right: 8px; */
+}
+
+.inspiration-image{
+    width: 100%;
+    border: 1px solid red;box-sizing: border-box;
+    overflow: hidden;
+    padding: 18px;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.right-btn{
+    background-color: #F4F5F7;
+    height: 70px !important; 
+    width: 70px !important;
+    border-radius: 50%;
+    margin: auto !important;
+    box-shadow: 0 4px 10px #3a3a3aa9;
+}
+
+.swiper .swiper-button-next{
+    color: #B88E2F !important;
+    font-size: 20px !important;
+}
+
+:root .page {
+  --swiper-pagination-color: #B88E2F; /* Color of the active bullet */
+  --swiper-pagination-bullet-inactive-color: #999999; /* Color of inactive bullets */
+  --swiper-pagination-bullet-inactive-opacity: 0.5; /* Opacity of inactive bullets */
+}

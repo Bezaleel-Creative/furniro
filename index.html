@@ -6,6 +6,7 @@
     <title>Furniro</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="header-section">
@@ -65,7 +66,7 @@
 
 
     <!-- OUR PRODUCT -->
-    <section class="section-width">
+    <section>
         <div class="our-products">
             <h2>Our Products</h2>
             <div class="products">
@@ -251,13 +252,45 @@
             <a href="" class="show-more-btn">Show More</a>
         </div>
 
+    </section>
 
 
+    <section class="inspiration">
+        <div class="inspiration-container">
+            <div class="inspiration-text">
+                <h2>50+ Beautiful rooms inspiration</h2>
+                <p class="inspiration-info">
+                    Our designer already made a lot of beautiful prototipe of rooms that inspire you
+                </p>
+                <a href="" class="more-btn">Explore More</a>
+            </div>
+            <div class="inspiration-image">
+                  <!-- Swiper -->
+                <swiper-container class="swiper mySwiper" pagination="true" navigation="true" loop="true">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./resources/Rectangle 24.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./resources/Rectangle 25.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./resources/Rectangle 24.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./resources/Rectangle 25.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination page"></div>
+                    <!-- <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-button-next right-btn"></div>
+                     
+                </swiper-container>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script>
         
-
-
-
-
+    </script>
     <script src="./script.js"></script>
 </body>
 </html>
