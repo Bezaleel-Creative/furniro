@@ -11,6 +11,10 @@
     border: none;
 }
 
+body{
+    background-color: #fff;
+}
+
 li{
     list-style: none;
 }

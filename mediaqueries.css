@@ -272,6 +272,13 @@
     .newsletter-form{
         flex-direction: column;
     }
+
+    
+    .newsletter-form button{
+        display: inline-block;
+        width: fit-content;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 400px){
