@@ -269,6 +269,9 @@
         font-size: 12px;
         font-weight: normal;
     }
+    .newsletter-form{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 400px){
