@@ -21,11 +21,12 @@ a{
 
 .header-section{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(./resources/scandinavian-interior-mockup-wall-decal-background\ 1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 header{
@@ -35,18 +36,22 @@ header{
     top: 0;
     padding: 14px;
     margin: auto;
-    z-index: 100;
+    box-shadow: 0 2px 8px #3a3a3a2a;
+    z-index: 99912300;
     /* border: 1px solid red; */
 }
 
 .navbar{
     width: 100%;
     max-width: 1440px;
+    background-color: white;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* box-shadow: 0 2px 8px #3a3a3a2a; */
     /* border: 1px solid blue; */
+    padding: 0 14px;
 }
 
 .logo{
@@ -85,16 +90,20 @@ h4{
     color: #000;
 }
 
+.menu-btn{
+    display: none;
+}
+
 .hero-section{
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     max-width: 1440px;
-    margin: auto;
+    margin: auto auto;
     padding: 14px;
-    /* border: 1px solid blue; */
     display: flex;
     align-items: end;
     justify-content: right;
+    position: relative;
 }
 
 .hero-container{
@@ -102,7 +111,8 @@ h4{
     width: 643px;
     background-color: #fff3e3;
     /* border: 1px solid green; */
-    margin-right: 34px;
+    /* margin-right: 34px; */
+    margin-bottom: 3rem;
     padding: 65px 45px 0;
 }
 
@@ -236,17 +246,21 @@ h2{
 .product-card{
     position: relative;
     transition: .3s ease-in-out;
+    width: 100%;
 }
 
 .product-image{
     position: relative;
     z-index: -100;
     width: 100%;
+    height: 300px;
     background-color: #F4F5F7;
 }
 
 .product-image img{
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 
 .badge{
@@ -287,7 +301,7 @@ h2{
 }
 
 .product-info{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 150%;
     color: #898989;
@@ -296,7 +310,7 @@ h2{
 .price{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 
 .current{
@@ -307,7 +321,7 @@ h2{
 }
 
 .old{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 150%;
     color: #898989;
@@ -463,11 +477,11 @@ h2{
 
 .right-btn{
     background-color: #F4F5F7;
-    height: 70px !important; 
-    width: 70px !important;
+    height: 40px !important; 
+    width: 40px !important;
     border-radius: 50%;
     margin: auto !important;
-    box-shadow: 0 4px 10px #3a3a3aa9;
+    box-shadow: 0 4px 10px #3a3a3a6e;
 }
 
 .swiper .swiper-button-next{
@@ -479,7 +493,10 @@ h2{
   --swiper-pagination-color: #B88E2F; /* Color of the active bullet */
   --swiper-pagination-bullet-inactive-color: #999999; /* Color of inactive bullets */
   --swiper-pagination-bullet-inactive-opacity: 0.5; /* Opacity of inactive bullets */
-  --swiper-pagination-border: 2px solid red;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    --swiper-navigation-size: 22px; /* Reduced arrow size */
 }
 
 .gallery-section{
@@ -510,7 +527,7 @@ h2{
 }
 
 .item1{
-    grid-template-columns: span 1;
+    grid-column: span 1;
     display: flex;
     align-items: flex-end;
     height: 100%;
